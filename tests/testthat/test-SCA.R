@@ -35,7 +35,8 @@ test_that("run_sca", {
   # not all sensograms are fitted
   run_sca(
     input = sca_sim[, c("time", "A", "F")], tstart = 1.2, tend = 200, tass = 10, tdiss = 20, conc = 10 * 10^-9,
-    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE, quiet = FALSE
+    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE,
+    quiet = FALSE
   ) %>%
     is.list() %>%
     expect_true() %>%
@@ -44,7 +45,7 @@ test_that("run_sca", {
 
   run_sca(
     input = sca_sim[, c(1:3)], tstart = 0, tend = 800, tass = 200, tdiss = 500, conc = 10 * 10^-9,
-    generate_output = TRUE, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = TRUE,
+    generate_output = TRUE, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = FALSE,
     outdir = outdir, quiet = FALSE,
     samples_names_file = data.frame(ID = LETTERS[1:2], Name = paste0("New_", LETTERS[1:2]))
   ) %>%

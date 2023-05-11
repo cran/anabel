@@ -92,7 +92,7 @@ help(package = "anabel")
 ?SCK_dataset
 ```
 
-These datasets were generated using the `Biacore™ Simul8 – SPR sensorgram simulation tool (Simul8)` [@simul8]
+All datasets that are used in this tutorial were generated using the `Biacore™ Simul8 – SPR sensorgram simulation tool (Simul8)` [@simul8]
 
 ## Functions
 

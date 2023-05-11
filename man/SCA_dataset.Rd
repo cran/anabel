@@ -14,7 +14,7 @@ A data frame with 453 rows and four variables:
 }
 }
 \source{
-\url{https://www.biocopy.com/}
+\url{https://apps.cytivalifesciences.com/spr/}
 }
 \usage{
 data(SCA_dataset)

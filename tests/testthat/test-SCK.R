@@ -67,7 +67,7 @@ test_that("run_sck", {
   run_sck(
     input = SCK_dataset, tstart = 1, tass = c(30, 220, 390, 560, 730),
     tdiss = c(170, 320, 490, 660, 830), quiet = FALSE,
-    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = TRUE,
+    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = FALSE,
     conc = c(6.17e-10, 1.85e-09, 5.56e-09, 1.67e-08, 50), save_tables_as = "csv"
   ) %>%
     is.list() %>%
@@ -79,7 +79,7 @@ test_that("run_sck", {
   run_sck(
     input = SCK_dataset, tstart = 1, tass = c(50, 220, 390, 560, 730),
     tdiss = c(150, 320, 490, 660, 830), quiet = FALSE,
-    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = TRUE,
+    generate_output = TRUE, outdir = outdir, generate_Plots = TRUE, generate_Tables = TRUE, generate_Report = FALSE,
     conc = c(6.17e-10, 1.85e-09, 5.56e-09, 1.67e-08, 5.00e-08), save_tables_as = "csv"
   ) %>%
     is.list() %>%

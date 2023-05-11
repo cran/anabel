@@ -9,7 +9,7 @@
 #'    \item{Sample.B}{sample two with Ka = 1e+6nM, Kd = 5e-2}
 #'    \item{Sample.C}{sample four with Ka = 1e+6nM, Kd = 1e-3}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(SCA_dataset)
 "SCA_dataset"
 
@@ -24,7 +24,7 @@
 #'    \item{Sample.B}{sample two with Ka = 1e+6nM, Kd = 5e-2}
 #'    \item{Sample.C}{sample four with Ka = 1e+6nM, Kd = 1e-3}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(SCA_dataset)
 "SCA_dataset_drift"
 
@@ -40,7 +40,7 @@
 #'   \item{Time}{time points of the binding interaction from start to end}
 #'   \item{Sample.A}{sample containing 5 titerations with Ka = 1e+6nM, Kd = 1e-2}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(SCK_dataset)
 "SCK_dataset"
 
@@ -56,7 +56,7 @@
 #'   \item{Time}{time points of the binding interaction from start to end}
 #'   \item{Sample.A}{sample containing 5 titerations with Ka = 1e+6nM, Kd = 1e-2}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(SCK_dataset)
 "SCK_dataset_decay"
 
@@ -74,7 +74,7 @@
 #'   \item{Conc..1.85.nM.}{binding curve generated with analyte concentration = 1.85nM}
 #'   \item{Conc..6.17e.1.nM.}{binding curve generated with analyte concentration = 0.617nM}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(MCK_dataset)
 "MCK_dataset"
 
@@ -92,6 +92,6 @@
 #'   \item{Conc..1.85.nM.}{binding curve generated with analyte concentration = 1.85nM}
 #'   \item{Conc..6.17e.1.nM.}{binding curve generated with analyte concentration = 0.617nM}
 #' }
-#' @source \url{https://www.biocopy.com/}
+#' @source \url{https://apps.cytivalifesciences.com/spr/}
 #' @usage data(MCK_dataset)
 "MCK_dataset_drift"
