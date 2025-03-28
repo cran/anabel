@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", width = 68)
 
 ## ----logo, echo=FALSE, warning=FALSE, message=FALSE---------------------------
@@ -18,14 +18,14 @@ data("MCK_dataset")
 data("SCK_dataset")
 
 ## ----help_pages, eval=FALSE---------------------------------------------------
-#  help(package = "anabel")
-#  ?SCA_dataset
-#  ?MCK_dataset
-#  ?SCK_dataset
+# help(package = "anabel")
+# ?SCA_dataset
+# ?MCK_dataset
+# ?SCK_dataset
 
 ## ----func, eval=FALSE---------------------------------------------------------
-#  ?convert_toMolar() # show help page
-#  ?run_anabel() # show help page
+# ?convert_toMolar() # show help page
+# ?run_anabel() # show help page
 
 ## ----convert_2molar-----------------------------------------------------------
 # one value in case of SCA method
@@ -35,11 +35,11 @@ ac_mck <- convert_toMolar(val = c(50, 16.7, 5.56, 1.85, 6.17e-1), unit = "nM")
 ac_sck <- convert_toMolar(val = c(6.17e-1, 1.85, 5.56, 16.7, 50), unit = "nM")
 
 ## ----models, echo=FALSE, eval=FALSE-------------------------------------------
-#  htmltools::img(
-#    src = knitr::image_uri("vignettes/strategies.png"),
-#    alt = "models",
-#    style = "padding:10px;width:100%; border:0"
-#  )
+# htmltools::img(
+#   src = knitr::image_uri("vignettes/strategies.png"),
+#   alt = "models",
+#   style = "padding:10px;width:100%; border:0"
+# )
 
 ## ----sca_input, echo=FALSE, fig.dim=c(5,3), fig.align='center'----------------
 myTable <- data.frame(
@@ -217,27 +217,27 @@ ggplot(sck_rslt_decay$fit_data, aes(x = Time)) +
   theme_light()
 
 ## ----ff, eval=FALSE-----------------------------------------------------------
-#  # call anabel in debug mode with sca data set
-#  my_data <- run_anabel(SCA_dataset, tass = 50, tdiss = 200, conc = ac, debug_mode = TRUE)
-#  init_df <- my_data$init_df
-#  
-#  # extract information of the first curve (Sample.A)
-#  response <- init_df$Response[1] %>%
-#    strsplit(",") %>%
-#    unlist() %>%
-#    as.numeric()
-#  
-#  # create a temp data frame containing both original value 'Value' and the estimated one 'Response'
-#  sampleA_df <- data.frame(
-#    Time = SCA_dataset$Time, Value = SCA_dataset$Sample.A,
-#    Response = response
-#  )
-#  
-#  # Generate the plot associated with this curve
-#  ggplot(sampleA_df, aes(x = Time)) +
-#    geom_point(aes(y = Value), col = "#A2C510", size = 0.5) +
-#    geom_line(aes(y = Response)) +
-#    theme_light()
+# # call anabel in debug mode with sca data set
+# my_data <- run_anabel(SCA_dataset, tass = 50, tdiss = 200, conc = ac, debug_mode = TRUE)
+# init_df <- my_data$init_df
+# 
+# # extract information of the first curve (Sample.A)
+# response <- init_df$Response[1] %>%
+#   strsplit(",") %>%
+#   unlist() %>%
+#   as.numeric()
+# 
+# # create a temp data frame containing both original value 'Value' and the estimated one 'Response'
+# sampleA_df <- data.frame(
+#   Time = SCA_dataset$Time, Value = SCA_dataset$Sample.A,
+#   Response = response
+# )
+# 
+# # Generate the plot associated with this curve
+# ggplot(sampleA_df, aes(x = Time)) +
+#   geom_point(aes(y = Value), col = "#A2C510", size = 0.5) +
+#   geom_line(aes(y = Response)) +
+#   theme_light()
 
 ## -----------------------------------------------------------------------------
 # sessionInfo()

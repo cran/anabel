@@ -10,11 +10,9 @@ bibentry(bibtype = "Article",
   year         = "2019",
   volume       = "13",
   pages        = "1--10",
-  url          = "https://anabel.biocopy.de",
 
   textVersion  =
   paste("Stefan Kraemer, Johannes Woehrle, Christin Rath and Guenter Roth (2019).",
         "Anabel: An Online Tool for the Real-Time Kinetic Analysis of Binding Events.",
-        "Bioinformatics and Biology Insights, 13, 1-10.",
-        "URL https://anabel.biocopy.de/")
+        "Bioinformatics and Biology Insights, 13, 1-10.")
 )

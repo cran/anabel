@@ -1,12 +1,12 @@
 Package: anabel
 Title: Analysis of Binding Events + l
-Version: 3.0.1
+Version: 3.0.2
 Authors@R: c(
-    person("Hoor", "Al-Hasani", , "anabel@biocopy.de", role = c("aut", "cre"),
+    person("Hoor", "Al-Hasani", , "", role = "aut",
            comment = c(ORCID = "0000-0002-0431-845X")),
-    person("Oliver", "Selinger", , "anabel@biocopy.de", role = "aut",
+    person("Oliver", "Selinger", , "", role = "aut",
            comment = c(ORCID = "0000-0001-9723-2809")),
-    person("Stefan", "Kraemer", , "anabel@biocopy.de", role = "aut",
+    person("Stefan", "Kraemer", , "stefan.kraemer.91@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0071-9344")))
 Description: A free software for a fast and easy analysis of 1:1 molecular interaction studies. 
    This package is suitable for a high-throughput data analysis. 
@@ -15,9 +15,9 @@ Description: A free software for a fast and easy analysis of 1:1 molecular inter
    and it takes care of all fitting details.
    The first two releases of 'anabel' were created and implemented as in 
    (<doi:10.1177/1177932218821383>, <doi:10.1093/database/baz101>).
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 LazyData: true
 Imports: cli (>= 3.4), dplyr (>= 1.0), ggplot2 (>= 3.3), kableExtra (>=
@@ -29,10 +29,10 @@ Suggests: htmltools (>= 0.5), knitr (>= 1.36), rmarkdown (>= 2.17),
         testthat (>= 3.0.0), withr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2023-05-11 11:12:14 UTC; hooral-hasani
-Author: Hoor Al-Hasani [aut, cre] (<https://orcid.org/0000-0002-0431-845X>),
+Packaged: 2025-03-22 00:12:31 UTC; stefan
+Author: Hoor Al-Hasani [aut] (<https://orcid.org/0000-0002-0431-845X>),
   Oliver Selinger [aut] (<https://orcid.org/0000-0001-9723-2809>),
-  Stefan Kraemer [aut] (<https://orcid.org/0000-0002-0071-9344>)
-Maintainer: Hoor Al-Hasani <anabel@biocopy.de>
+  Stefan Kraemer [aut, cre] (<https://orcid.org/0000-0002-0071-9344>)
+Maintainer: Stefan Kraemer <stefan.kraemer.91@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-05-11 11:50:02 UTC
+Date/Publication: 2025-03-28 13:00:07 UTC

@@ -1,6 +1,18 @@
-# Written by SK1 (30.Oct.2022)
-# Modified by OS1 (2.Nov.2022)
-# Modified by HA1 (4.Nov.2022) # adding pkg related import info
+# Copyright (C) 2025  Stefan Kraemer
+#   
+#   This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation as version 3 of the License
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 
 # The function is dedicated to initiate model's parameters
 #' @importFrom rlang .data
@@ -287,7 +299,7 @@ model_fit <- function(data, n_steps, mode, tass, tdiss, conc, names,
 
     sd <- as.data.frame(t(as.data.frame(out$coefficients)))[2, ]
 
-    sd[fitting_param$isLog == TRUE] <- log(10) * (val[fitting_param$isLog == TRUE]) * ((sd[fitting_param$isLog == TRUE]) / (log10(val[fitting_param$isLog == TRUE])))
+    sd[fitting_param$isLog == TRUE] <- log(10) * val[fitting_param$isLog == TRUE] * sd[fitting_param$isLog == TRUE]
 
     names(sd) <- paste0("std_", names(val))
     row.names(sd) <- NULL

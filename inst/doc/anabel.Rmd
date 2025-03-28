@@ -29,7 +29,7 @@ date: "Last compiled on `r format(Sys.time(), '%B, %Y')` "
 bibliography: paper.bib
 #`tango`, `pygments`, `kate`, `monochrome`, `espresso`, `zenburn`, `haddock`, `breezedark`, `textmate`, `arrow`, or `rstudio` or a file with extension `.theme`.
 abstract: >
-   _anabel_ is a free software for kinetics-fit analysis of 1:1 biomolecular interactions for Single-Curve-Analysis (SCA), Single-Cycle-Kinetics (SCK), and Multi-Cycle-Kinetics (MCK) injection strategies. It supports exported kinetic datasets from Biacore, BLI, Score, and an open data format, providing a user-friendly interface for non R-users ([check the online version](https://anabel.biocopy.de/)). Funded by [BioCopy GmbH](https://www.biocopy.com/), _anabel_ is a valuable tool for researchers seeking a streamlined analysis process.
+   _anabel_ is a free software for kinetics-fit analysis of 1:1 biomolecular interactions for Single-Curve-Analysis (SCA), Single-Cycle-Kinetics (SCK), and Multi-Cycle-Kinetics (MCK) injection strategies. It supports exported kinetic datasets from Biacore, BLI, Score, and an open data format, providing a user-friendly interface for non R-users ([check the online version](https://skscience.org/)). Funded by [BioCopy GmbH](https://www.biocopy.com/), _anabel_ is a valuable tool for researchers seeking a streamlined analysis process.
 
 vignette: >
   %\VignetteIndexEntry{Welcome to _anabel_: ANAlysis of Binding Events + l}
@@ -51,7 +51,7 @@ if (!rlang::is_installed("htmltools")) install.packages("htmltools")
 
 # Summary
 
-*anabel* aims to simplify the analysis of binding-curve fitting for scientists of different backgrounds, while minimizing user influence [@anabel1; @anabel2]. With the function `run_anabel`, which supports three different modes, estimating kinetics constants is a straightforward task. The user can select the mode that is most appropriate for their experimental setup. Please note that this vignette assumes a basic understanding of real-time label-free biomolecular interactions. For more information and an introduction to the theoretical background, please refer to the [online version](https://anabel.biocopy.de/).
+*anabel* aims to simplify the analysis of binding-curve fitting for scientists of different backgrounds, while minimizing user influence [@anabel1; @anabel2]. With the function `run_anabel`, which supports three different modes, estimating kinetics constants is a straightforward task. The user can select the mode that is most appropriate for their experimental setup. Please note that this vignette assumes a basic understanding of real-time label-free biomolecular interactions. For more information and an introduction to the theoretical background, please refer to the [online version](https://skscience.org/).
 
 
 # Getting started
@@ -462,13 +462,11 @@ If you only want specific output, you can set any of the associated options `gen
 > `generate_output` overwrits all other flags, its default value is "none", i.e. nothing is generated. Therefore, changing the other options without changing it will always be ignored.
 
 # Design principles & support
-The main goal of *anabel* is to support the scientific community for free and establish unified standards for kinetics analysis. It is continuously updated to ensure its usefulness for a variety of instruments. You can stay updated on the latest news on the *anabel* website at <https://www.biocopy.com/>. If you have any questions, suggestions, or bug reports, you can contact the *anabel* team at [anabel\@biocopy.de](mailto:anabel@biocopy.de){.email}.
-
-To help the *anabel* team process your request more efficiently, please make sure to include specific keywords in the subject line of your email. If you encountered an error, use the keyword **Error**. If the run was successful but the results are incorrect, use the keyword **Bug**. If you need help with something specific about your data, use the keyword **Help**. If you are requesting a new feature or plan to use *anabel* in a commercial workflow, use the keyword **Request**. Additionally, please include a reproducible example of the problem in your email.
+The main goal of *anabel* is to support the scientific community for free and establish unified standards for kinetics analysis. It is continuously updated to ensure its usefulness for a variety of instruments. If you encounter an issue or bug, report it on the github page: [Anabel github Repo](https://github.com/SKscience/anabel_backend)
 
 # Acknowledgments and licensing
 
-*anabel* the package and the online tool are supported by [BioCopy GmBH](https://www.biocopy.com/). The package could be re-distributed and/or modified under the terms of the General Public License (GNU) as published by the Free Software Foundation (under any version). **For commercial use please contact the *anabel* team.**
+*anabel* the package and the online tool are supported by [BioCopy GmBH](https://www.biocopy.com/).
 
 ````{=html}
 <!-- # Build info
